@@ -4,12 +4,13 @@ console.log("HELLO PAPA PLATOON!")
 let randomNum = Math.floor(Math.random() * 101)
 let guessHx = []
 let resultBox = document.getElementById('result')
+let historyBox = document.getElementById('guess-hx')
 
 
 console.log(randomNum)
 
 function checkGuess(){
-    let guess = document.getElementById('input-box').value*1 
+    let guess = document.getElementById('input-box').value*1
     guessHx.push(guess)
     if (guess === randomNum){
         resultBox.innerText = "Correct!"
@@ -18,5 +19,12 @@ function checkGuess(){
     } else {
         resultBox.innerText = "Too Low!"
     }
-
+    historyBox.innerText += ` ${guess} |`
 }
+
+
+function clearField(){
+    resultBox.innerText = ''
+    document.getElementById('input-box').value = ''
+}
+

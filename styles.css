@@ -1,11 +1,80 @@
 /* styles.css */
 body {
-  font-family: "Helvetica Neue", sans-serif;
+  font-family:'Lucida Sans Unicode', sans-serif;
   font-weight: 300;
   text-align: center;
+  background-color: #a9e7e7;
+  background: linear-gradient(0.25turn, lightgray, lightblue, cyan);
+  margin-top: 40%;
+  margin-left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 h1 {
-  font-weight: 400
+  color: lightcyan;
+  font-weight: 200;
+  margin: auto;
+  width: 60%;
+  margin-bottom: 40px;
+  margin-top: 70px;
+  text-shadow: 2px 2px 2px gray;
+  
 }
 
+
+#input-box {
+  background-color: white;
+  border-radius: 5px;
+  border-color: aliceblue;
+  border: 50px;
+  text-align: center;
+  margin-bottom: 7%;
+  margin-left: -3%
+}
+
+
+button {
+  border-radius:  5px;
+  background-color: lightgray;
+  color: white;
+  border-color: aliceblue;
+  font-family:'Lucida Sans Unicode', sans-serif;
+}
+
+button:hover {
+  background-color: white;
+  color: grey;
+}
+
+#result {
+  color: white;
+  text-shadow: 1px 1px 2px gray;
+  font-size: 20px;
+  margin-bottom: 6%;
+  display: absolute;
+  height: 20px;
+}
+
+#guess-hx {
+  color: white;
+  text-shadow: 2px 2px 5px gray;
+  font-size: 13px;
+  width: 49vw;
+  margin-top: 5%;
+  height: 10px
+}
+
+h4 {
+  margin: auto;
+  color: white;
+  text-shadow: 1px 1px 2px gray;
+  font-size: 20px;
+  font-weight:200;
+}
+
+
+/* .centered-image {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); */
